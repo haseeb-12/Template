@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  background-color: #111;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+.posts,.page , h2{
+  width: 70%;
+  margin: 0 auto;
+}
+p{
+  padding: 10px;
+  background-color:cornflowerblue;
+  margin:10px;
+  border-radius: 10px;
+
+}
+nav{
+  margin-top: 40px;
+  text-align:center;
+  margin-bottom: 40px;
+}
+a{
+  text-decoration: none;
+  color:white;
+  text-align: center;
+}
+.card{
+  width: 40%;
+  margin:0 auto;
+  padding: 10px;
+  background-color:rgb(70, 100, 156);
+  border-radius: 10px;
+}
+h3{
+  color:yellow;
+  border-radius: 10px;
+ text-align: center;
+  font-size: 20px;
+  font-weight:300;
+  border-bottom: 1px solid ghostwhite;
+}
+
+button{
+  margin: 40px 10px;
+  background-color: transparent;
+  padding: 2px 5px;
+  border: 1px solid rgb(227, 107, 107);
+  outline: none;
+  border-radius:5px;
+  color:white;
+
+}
+
+/* ------------same class and loader--------------------------- */
+
+.container{
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error img{
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+.loader {
+  border: 2px solid tomato;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.loader::after {
+  position: absolute;
+  content: "";
+  transform-origin: 0 100%;
+  left:50%;
+  top: 10px;
+  width: 2px;
+  height: 40px;
+  background-color: cornflowerblue;
+  animation: tick 0.9s infinite;
+}
+
+@keyframes tick {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+h2{
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .posts {
+    width: 90%;
+  }
+ .card{
+  width: 90%;
+ }
+button{
+  margin: 20px 10px 10px 0;
+}
+}
+
